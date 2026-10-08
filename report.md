@@ -34,9 +34,6 @@ make all
 
 ![btest 结果](images/btest.png)
 
-完整终端结果如下：
-
-![最终 110/110](images/final_110_110.png)
 
 ## 3. 各函数实现思路
 
@@ -136,15 +133,7 @@ bias = half - 1 + ((x >> n) & 1)
 
 ## 4. 实验结果
 
-最终本地测试结果为：
-
-```text
-All 19 functions passed operator checks.
-Total points: 110/110
-all checks passed: 110/110
-```
-
-代码推送到 GitHub 后，课程提供的 GitHub Actions 自动评分也成功通过，19 个题目的测试步骤均为 `success`。
+最终 19 个函数均通过运算符规则检查，`btest` 得分为 `110/110`，`test.sh` 完整测试通过。代码推送至 GitHub 后，GitHub Actions 自动评分同样全部通过。
 
 ## 5. 参考资料与辅助工具
 
@@ -153,7 +142,7 @@ all checks passed: 110/110
 2. 课程 DataLab 模板仓库中的 `README.md` 与 `bits.c` 题目说明：  
    https://github.com/ICS-26Fall-FDU/DataLab
 3. *Computer Systems: A Programmer's Perspective (CS:APP)* 中关于整数表示、位运算与 IEEE 754 浮点数的相关内容。
-4. 在实验调试与报告整理过程中使用 ChatGPT 辅助讨论位运算思路、IEEE 754 边界情况及测试结果；最终实现均通过课程提供的 `check_ops.py`、`btest`、`test.sh` 和 GitHub Actions 检查。
+4. 在实验过程中使用 ChatGPT 辅助理解位运算、补码、IEEE 754 舍入及边界情况，并协助检查测试结果和整理实验报告；最终代码通过课程提供的 `check_ops.py`、`btest`、`test.sh` 与 GitHub Actions 验证。
 
 ## 6. 实验体会
 
